@@ -130,25 +130,50 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="poisons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuv-iC-shB">
                                         <rect key="frame" x="0.0" y="367" width="960" height="288"/>
                                         <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="288" id="TnL-kB-u8n"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="52"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spock" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-IB-ek0">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhz-mg-FYM" userLabel="Loser View">
                                         <rect key="frame" x="288" y="655" width="384" height="347"/>
+                                        <subviews>
+                                            <view hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7g-Qa-EhR" userLabel="Overlay">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="347"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spock" translatesAutoresizingMaskIntoConstraints="NO" id="Sf8-IB-ek0">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="347"/>
+                                                <animations/>
+                                            </imageView>
+                                        </subviews>
                                         <animations/>
-                                    </imageView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Sf8-IB-ek0" firstAttribute="height" secondItem="Uhz-mg-FYM" secondAttribute="height" id="9ug-oV-a8c"/>
+                                            <constraint firstItem="H7g-Qa-EhR" firstAttribute="centerX" secondItem="Sf8-IB-ek0" secondAttribute="centerX" id="Jj6-bQ-qFf"/>
+                                            <constraint firstItem="H7g-Qa-EhR" firstAttribute="width" secondItem="Sf8-IB-ek0" secondAttribute="width" id="MUD-UW-n5D"/>
+                                            <constraint firstItem="Sf8-IB-ek0" firstAttribute="width" secondItem="Uhz-mg-FYM" secondAttribute="width" id="hfA-I8-cy6"/>
+                                            <constraint firstItem="H7g-Qa-EhR" firstAttribute="centerY" secondItem="Sf8-IB-ek0" secondAttribute="centerY" id="jZ5-gJ-iLx"/>
+                                            <constraint firstItem="Sf8-IB-ek0" firstAttribute="centerX" secondItem="Uhz-mg-FYM" secondAttribute="centerX" id="oGe-Lx-GQQ"/>
+                                            <constraint firstItem="Sf8-IB-ek0" firstAttribute="centerY" secondItem="Uhz-mg-FYM" secondAttribute="centerY" id="ork-sb-khg"/>
+                                            <constraint firstItem="H7g-Qa-EhR" firstAttribute="height" secondItem="Sf8-IB-ek0" secondAttribute="height" id="r2Y-Pi-OV6"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Uhz-mg-FYM" firstAttribute="width" secondItem="xI6-zi-Sdn" secondAttribute="width" id="07L-Vb-pf2"/>
+                                    <constraint firstItem="Uhz-mg-FYM" firstAttribute="centerX" secondItem="xI6-zi-Sdn" secondAttribute="centerX" id="6sh-23-mZQ"/>
+                                    <constraint firstItem="Uhz-mg-FYM" firstAttribute="height" secondItem="xI6-zi-Sdn" secondAttribute="height" id="9af-GV-fR1"/>
+                                    <constraint firstItem="Tuv-iC-shB" firstAttribute="bottom" secondItem="Uhz-mg-FYM" secondAttribute="top" id="Phe-8F-DXK"/>
                                     <constraint firstItem="Tuv-iC-shB" firstAttribute="centerX" secondItem="OHO-Gm-Xed" secondAttribute="centerX" id="Z2w-PR-00t"/>
-                                    <constraint firstItem="Sf8-IB-ek0" firstAttribute="height" secondItem="xI6-zi-Sdn" secondAttribute="height" id="bnM-wP-4mV"/>
                                     <constraint firstItem="Tuv-iC-shB" firstAttribute="width" secondItem="OHO-Gm-Xed" secondAttribute="width" id="g9o-v6-YrP"/>
-                                    <constraint firstItem="Tuv-iC-shB" firstAttribute="bottom" secondItem="Sf8-IB-ek0" secondAttribute="top" id="iLv-gH-jCU"/>
                                     <constraint firstItem="Tuv-iC-shB" firstAttribute="top" secondItem="xI6-zi-Sdn" secondAttribute="bottom" id="irK-d9-OHC"/>
-                                    <constraint firstItem="Sf8-IB-ek0" firstAttribute="centerX" secondItem="xI6-zi-Sdn" secondAttribute="centerX" id="iya-Pg-6J7"/>
-                                    <constraint firstItem="Sf8-IB-ek0" firstAttribute="width" secondItem="xI6-zi-Sdn" secondAttribute="width" id="sA7-9t-0hg"/>
                                     <constraint firstItem="xI6-zi-Sdn" firstAttribute="centerX" secondItem="OHO-Gm-Xed" secondAttribute="centerX" id="zQu-tm-9SQ"/>
                                 </constraints>
                             </view>
@@ -166,14 +191,14 @@
                             <constraint firstItem="OHO-Gm-Xed" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="cP6-Ji-EnG"/>
                             <constraint firstItem="OHO-Gm-Xed" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-40" id="mAC-PL-Ge6"/>
                             <constraint firstItem="jXR-GY-zSY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rqR-6Z-2wB"/>
-                            <constraint firstItem="Sf8-IB-ek0" firstAttribute="centerY" secondItem="22H-hc-NPg" secondAttribute="centerY" id="vgI-j9-dv8"/>
                             <constraint firstItem="xI6-zi-Sdn" firstAttribute="height" secondItem="LUy-Df-fFp" secondAttribute="height" id="wYa-UX-BIg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="actionLabel" destination="Tuv-iC-shB" id="Mlr-EC-fOT"/>
                         <outlet property="inputsView" destination="jXR-GY-zSY" id="ti6-Ot-8Dy"/>
-                        <outlet property="loserImage" destination="Sf8-IB-ek0" id="JJl-OI-k3d"/>
+                        <outlet property="loserImage" destination="Sf8-IB-ek0" id="iTi-dX-8Oi"/>
+                        <outlet property="loserOverlay" destination="H7g-Qa-EhR" id="Asf-WE-zNm"/>
                         <outlet property="resultsView" destination="OHO-Gm-Xed" id="SfR-XX-IbS"/>
                         <outlet property="winnerImage" destination="xI6-zi-Sdn" id="68c-NF-sKP"/>
                     </connections>
